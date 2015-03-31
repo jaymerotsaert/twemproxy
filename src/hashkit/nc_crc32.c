@@ -91,6 +91,172 @@ static const uint32_t crc32tab[256] = {
     0xb40bbe37, 0xc30c8ea1, 0x5a05df1b, 0x2d02ef8d,
 };
 
+static const char COUNTRY_US[] = "us";
+static const char COUNTRY_BO[] = "bo";
+static const char COUNTRY_SK[] = "sk";
+static const char COUNTRY_SN[] = "sn";
+static const char COUNTRY_TW[] = "tw";
+static const char COUNTRY_MG[] = "mg";
+static const char COUNTRY_YE[] = "ye";
+static const char COUNTRY_XK[] = "xk";
+static const char COUNTRY_NE[] = "ne";
+static const char COUNTRY_TT[] = "tt";
+static const char COUNTRY_LR[] = "lr";
+static const char COUNTRY_FR[] = "fr";
+static const char COUNTRY_CZ[] = "cz";
+static const char COUNTRY_DZ[] = "dz";
+static const char COUNTRY_GT[] = "gt";
+static const char COUNTRY_PH[] = "ph";
+static const char COUNTRY_CM[] = "cm";
+static const char COUNTRY_CU[] = "cu";
+static const char COUNTRY_KW[] = "kw";
+static const char COUNTRY_LB[] = "lb";
+static const char COUNTRY_JM[] = "jm";
+static const char COUNTRY_MQ[] = "mq";
+static const char COUNTRY_BI[] = "bi";
+static const char COUNTRY_ME[] = "me";
+static const char COUNTRY_BR[] = "br";
+static const char COUNTRY_TR[] = "tr";
+static const char COUNTRY_RO[] = "ro";
+static const char COUNTRY_BE[] = "be";
+static const char COUNTRY_ZA[] = "za";
+static const char COUNTRY_NG[] = "ng";
+static const char COUNTRY_PK[] = "pk";
+static const char COUNTRY_KE[] = "ke";
+static const char COUNTRY_JO[] = "jo";
+static const char COUNTRY_BD[] = "bd";
+static const char COUNTRY_KZ[] = "kz";
+static const char COUNTRY_IS[] = "is";
+static const char COUNTRY_GN[] = "gn";
+static const char COUNTRY_MW[] = "mw";
+static const char COUNTRY_MT[] = "mt";
+static const char COUNTRY_CL[] = "cl";
+static const char COUNTRY_GB[] = "gb";
+static const char COUNTRY_NL[] = "nl";
+static const char COUNTRY_NO[] = "no";
+static const char COUNTRY_IQ[] = "iq";
+static const char COUNTRY_GR[] = "gr";
+static const char COUNTRY_HK[] = "hk";
+static const char COUNTRY_BF[] = "bf";
+static const char COUNTRY_TG[] = "tg";
+static const char COUNTRY_ET[] = "et";
+static const char COUNTRY_RW[] = "rw";
+static const char COUNTRY_MU[] = "mu";
+static const char COUNTRY_KG[] = "kg";
+static const char COUNTRY_IN[] = "in";
+static const char COUNTRY_CN[] = "cn";
+static const char COUNTRY_BG[] = "bg";
+static const char COUNTRY_RU[] = "ru";
+static const char COUNTRY_JP[] = "jp";
+static const char COUNTRY_PR[] = "pr";
+static const char COUNTRY_AE[] = "ae";
+static const char COUNTRY_QA[] = "qa";
+static const char COUNTRY_SD[] = "sd";
+static const char COUNTRY_GP[] = "gp";
+static const char COUNTRY_PG[] = "pg";
+static const char COUNTRY_SR[] = "sr";
+static const char COUNTRY_IT[] = "it";
+static const char COUNTRY_ID[] = "id";
+static const char COUNTRY_PL[] = "pl";
+static const char COUNTRY_MA[] = "ma";
+static const char COUNTRY_TH[] = "th";
+static const char COUNTRY_AT[] = "at";
+static const char COUNTRY_AO[] = "ao";
+static const char COUNTRY_SY[] = "sy";
+static const char COUNTRY_HT[] = "ht";
+static const char COUNTRY_LY[] = "ly";
+static const char COUNTRY_GA[] = "ga";
+static const char COUNTRY_GE[] = "ge";
+static const char COUNTRY_BW[] = "bw";
+static const char COUNTRY_MN[] = "mn";
+static const char COUNTRY_VE[] = "ve";
+static const char COUNTRY_SA[] = "sa";
+static const char COUNTRY_EG[] = "eg";
+static const char COUNTRY_CH[] = "ch";
+static const char COUNTRY_AU[] = "au";
+static const char COUNTRY_SV[] = "sv";
+static const char COUNTRY_SG[] = "sg";
+static const char COUNTRY_LK[] = "lk";
+static const char COUNTRY_ZW[] = "zw";
+static const char COUNTRY_CY[] = "cy";
+static const char COUNTRY_GM[] = "gm";
+static const char COUNTRY_MR[] = "mr";
+static const char COUNTRY_LA[] = "la";
+static const char COUNTRY_PE[] = "pe";
+static const char COUNTRY_DE[] = "de";
+static const char COUNTRY_DO[] = "do";
+static const char COUNTRY_SI[] = "si";
+static const char COUNTRY_FI[] = "fi";
+static const char COUNTRY_NI[] = "ni";
+static const char COUNTRY_AL[] = "al";
+static const char COUNTRY_CD[] = "cd";
+static const char COUNTRY_TZ[] = "tz";
+static const char COUNTRY_ZM[] = "zm";
+static const char COUNTRY_KH[] = "kh";
+static const char COUNTRY_RE[] = "re";
+static const char COUNTRY_TD[] = "td";
+static const char COUNTRY_AR[] = "ar";
+static const char COUNTRY_UY[] = "uy";
+static const char COUNTRY_UA[] = "ua";
+static const char COUNTRY_HR[] = "hr";
+static const char COUNTRY_EE[] = "ee";
+static const char COUNTRY_BJ[] = "bj";
+static const char COUNTRY_MM[] = "mm";
+static const char COUNTRY_LU[] = "lu";
+static const char COUNTRY_NP[] = "np";
+static const char COUNTRY_DJ[] = "dj";
+static const char COUNTRY_MX[] = "mx";
+static const char COUNTRY_VN[] = "vn";
+static const char COUNTRY_EC[] = "ec";
+static const char COUNTRY_SE[] = "se";
+static const char COUNTRY_DK[] = "dk";
+static const char COUNTRY_RS[] = "rs";
+static const char COUNTRY_HN[] = "hn";
+static const char COUNTRY_LV[] = "lv";
+static const char COUNTRY_PS[] = "ps";
+static const char COUNTRY_ML[] = "ml";
+static const char COUNTRY_MD[] = "md";
+static const char COUNTRY_CV[] = "cv";
+static const char COUNTRY_NC[] = "nc";
+static const char COUNTRY_UZ[] = "uz";
+static const char COUNTRY_AN[] = "an";
+static const char COUNTRY_ES[] = "es";
+static const char COUNTRY_CA[] = "ca";
+static const char COUNTRY_TN[] = "tn";
+static const char COUNTRY_PY[] = "py";
+static const char COUNTRY_PA[] = "pa";
+static const char COUNTRY_MZ[] = "mz";
+static const char COUNTRY_MK[] = "mk";
+static const char COUNTRY_NZ[] = "nz";
+static const char COUNTRY_AF[] = "af";
+static const char COUNTRY_CG[] = "cg";
+static const char COUNTRY_FJ[] = "fj";
+static const char COUNTRY_PF[] = "pf";
+static const char COUNTRY_CO[] = "co";
+static const char COUNTRY_LT[] = "lt";
+static const char COUNTRY_IL[] = "il";
+static const char COUNTRY_IR[] = "ir";
+static const char COUNTRY_GH[] = "gh";
+static const char COUNTRY_IE[] = "ie";
+static const char COUNTRY_BY[] = "by";
+static const char COUNTRY_NA[] = "na";
+static const char COUNTRY_GF[] = "gf";
+static const char COUNTRY_AM[] = "am";
+static const char COUNTRY_GQ[] = "gq";
+static const char COUNTRY_PT[] = "pt";
+static const char COUNTRY_HU[] = "hu";
+static const char COUNTRY_MY[] = "my";
+static const char COUNTRY_CR[] = "cr";
+static const char COUNTRY_CI[] = "ci";
+static const char COUNTRY_KR[] = "kr";
+static const char COUNTRY_BA[] = "ba";
+static const char COUNTRY_OM[] = "om";
+static const char COUNTRY_UG[] = "ug";
+static const char COUNTRY_AZ[] = "az";
+static const char COUNTRY_BH[] = "bh";
+static const char COUNTRY_MO[] = "mo";
+static const char COUNTRY_SL[] = "sl";
+    
 /*
  * CRC-32 implementation compatible with libmemcached library. Unfortunately
  * this implementation does not return CRC-32 as per spec.
@@ -98,6 +264,63 @@ static const uint32_t crc32tab[256] = {
 uint32_t
 hash_crc32(const char *key, size_t key_length)
 {
+    if ((size_t) 2 == key_length) {
+        if (strncmp(key, COUNTRY_US, 2) == 0 || strncmp(key, COUNTRY_BO, 2) == 0 || strncmp(key, COUNTRY_SK, 2) == 0 || strncmp(key, COUNTRY_SN, 2) == 0 || strncmp(key, COUNTRY_TW, 2) == 0 || strncmp(key, COUNTRY_MG, 2) == 0 || strncmp(key, COUNTRY_YE, 2) == 0 || strncmp(key, COUNTRY_XK, 2) == 0 || strncmp(key, COUNTRY_NE, 2) == 0 || strncmp(key, COUNTRY_TT, 2) == 0 || strncmp(key, COUNTRY_LR, 2) == 0) {
+            return 1;
+        }
+        if (strncmp(key, COUNTRY_FR, 2) == 0 || strncmp(key, COUNTRY_CZ, 2) == 0 || strncmp(key, COUNTRY_DZ, 2) == 0 || strncmp(key, COUNTRY_GT, 2) == 0 || strncmp(key, COUNTRY_PH, 2) == 0 || strncmp(key, COUNTRY_CM, 2) == 0 || strncmp(key, COUNTRY_CU, 2) == 0 || strncmp(key, COUNTRY_KW, 2) == 0 || strncmp(key, COUNTRY_LB, 2) == 0 || strncmp(key, COUNTRY_JM, 2) == 0 || strncmp(key, COUNTRY_MQ, 2) == 0 || strncmp(key, COUNTRY_BI, 2) == 0 || strncmp(key, COUNTRY_ME, 2) == 0) {
+            return 2;
+        }
+        if (strncmp(key, COUNTRY_BR, 2) == 0) {
+            return 3;
+        } 
+        if (strncmp(key, COUNTRY_TR, 2) == 0) {
+            return 4;
+        } 
+        if (strncmp(key, COUNTRY_RO, 2) == 0 || strncmp(key, COUNTRY_BE, 2) == 0 || strncmp(key, COUNTRY_ZA, 2) == 0 || strncmp(key, COUNTRY_NG, 2) == 0 || strncmp(key, COUNTRY_PK, 2) == 0 || strncmp(key, COUNTRY_KE, 2) == 0 || strncmp(key, COUNTRY_JO, 2) == 0 || strncmp(key, COUNTRY_BD, 2) == 0 || strncmp(key, COUNTRY_KZ, 2) == 0 || strncmp(key, COUNTRY_IS, 2) == 0 || strncmp(key, COUNTRY_GN, 2) == 0 || strncmp(key, COUNTRY_MW, 2) == 0 || strncmp(key, COUNTRY_MT, 2) == 0) {
+            return 5;
+        }
+        if (strncmp(key, COUNTRY_CL, 2) == 0 || strncmp(key, COUNTRY_GB, 2) == 0 || strncmp(key, COUNTRY_NL, 2) == 0 || strncmp(key, COUNTRY_NO, 2) == 0 || strncmp(key, COUNTRY_IQ, 2) == 0 || strncmp(key, COUNTRY_GR, 2) == 0 || strncmp(key, COUNTRY_HK, 2) == 0 || strncmp(key, COUNTRY_BF, 2) == 0 || strncmp(key, COUNTRY_TG, 2) == 0 || strncmp(key, COUNTRY_ET, 2) == 0 || strncmp(key, COUNTRY_RW, 2) == 0 || strncmp(key, COUNTRY_MU, 2) == 0 || strncmp(key, COUNTRY_KG, 2) == 0) {
+            return 6;
+        }
+        if (strncmp(key, COUNTRY_IN, 2) == 0) {
+            return 7;
+        }
+        if (strncmp(key, COUNTRY_CN, 2) == 0 || strncmp(key, COUNTRY_BG, 2) == 0 || strncmp(key, COUNTRY_RU, 2) == 0 || strncmp(key, COUNTRY_JP, 2) == 0 || strncmp(key, COUNTRY_PR, 2) == 0 || strncmp(key, COUNTRY_AE, 2) == 0 || strncmp(key, COUNTRY_QA, 2) == 0 || strncmp(key, COUNTRY_SD, 2) == 0 || strncmp(key, COUNTRY_GP, 2) == 0 || strncmp(key, COUNTRY_PG, 2) == 0 || strncmp(key, COUNTRY_SR, 2) == 0) {
+            return 8;
+        } 
+        if (strncmp(key, COUNTRY_IT, 2) == 0) {
+            return 9;
+        }
+        if (strncmp(key, COUNTRY_ID, 2) == 0 || strncmp(key, COUNTRY_PL, 2) == 0 || strncmp(key, COUNTRY_MA, 2) == 0 || strncmp(key, COUNTRY_TH, 2) == 0 || strncmp(key, COUNTRY_AT, 2) == 0 || strncmp(key, COUNTRY_AO, 2) == 0 || strncmp(key, COUNTRY_SY, 2) == 0 || strncmp(key, COUNTRY_HT, 2) == 0 || strncmp(key, COUNTRY_LY, 2) == 0 || strncmp(key, COUNTRY_GA, 2) == 0 || strncmp(key, COUNTRY_GE, 2) == 0 || strncmp(key, COUNTRY_BW, 2) == 0 || strncmp(key, COUNTRY_MN, 2) == 0) {
+            return 10;
+        } 
+        if (strncmp(key, COUNTRY_VE, 2) == 0 || strncmp(key, COUNTRY_SA, 2) == 0 || strncmp(key, COUNTRY_EG, 2) == 0 || strncmp(key, COUNTRY_CH, 2) == 0 || strncmp(key, COUNTRY_AU, 2) == 0 || strncmp(key, COUNTRY_SV, 2) == 0 || strncmp(key, COUNTRY_SG, 2) == 0 || strncmp(key, COUNTRY_LK, 2) == 0 || strncmp(key, COUNTRY_ZW, 2) == 0 || strncmp(key, COUNTRY_CY, 2) == 0 || strncmp(key, COUNTRY_GM, 2) == 0 || strncmp(key, COUNTRY_MR, 2) == 0 || strncmp(key, COUNTRY_LA, 2) == 0) {
+            return 11;
+        }
+        if (strncmp(key, COUNTRY_PE, 2) == 0 || strncmp(key, COUNTRY_DE, 2) == 0 || strncmp(key, COUNTRY_DO, 2) == 0 || strncmp(key, COUNTRY_SI, 2) == 0 || strncmp(key, COUNTRY_FI, 2) == 0 || strncmp(key, COUNTRY_NI, 2) == 0 || strncmp(key, COUNTRY_AL, 2) == 0 || strncmp(key, COUNTRY_CD, 2) == 0 || strncmp(key, COUNTRY_TZ, 2) == 0 || strncmp(key, COUNTRY_ZM, 2) == 0 || strncmp(key, COUNTRY_KH, 2) == 0 || strncmp(key, COUNTRY_RE, 2) == 0 || strncmp(key, COUNTRY_TD, 2) == 0) {
+            return 12;
+        } 
+        if (strncmp(key, COUNTRY_AR, 2) == 0 || strncmp(key, COUNTRY_UY, 2) == 0 || strncmp(key, COUNTRY_UA, 2) == 0 || strncmp(key, COUNTRY_HR, 2) == 0 || strncmp(key, COUNTRY_EE, 2) == 0 || strncmp(key, COUNTRY_BJ, 2) == 0 || strncmp(key, COUNTRY_MM, 2) == 0 || strncmp(key, COUNTRY_LU, 2) == 0 || strncmp(key, COUNTRY_NP, 2) == 0 || strncmp(key, COUNTRY_DJ, 2) == 0) {
+            return 13;
+        }
+        if (strncmp(key, COUNTRY_MX, 2) == 0) {
+            return 14;
+        } 
+        if (strncmp(key, COUNTRY_VN, 2) == 0 || strncmp(key, COUNTRY_EC, 2) == 0 || strncmp(key, COUNTRY_SE, 2) == 0 || strncmp(key, COUNTRY_DK, 2) == 0 || strncmp(key, COUNTRY_RS, 2) == 0 || strncmp(key, COUNTRY_HN, 2) == 0 || strncmp(key, COUNTRY_LV, 2) == 0 || strncmp(key, COUNTRY_PS, 2) == 0 || strncmp(key, COUNTRY_ML, 2) == 0 || strncmp(key, COUNTRY_MD, 2) == 0 || strncmp(key, COUNTRY_CV, 2) == 0 || strncmp(key, COUNTRY_NC, 2) == 0 || strncmp(key, COUNTRY_UZ, 2) == 0 || strncmp(key, COUNTRY_AN, 2) == 0) {
+            return 15;
+        }
+        if (strncmp(key, COUNTRY_ES, 2) == 0 || strncmp(key, COUNTRY_CA, 2) == 0 || strncmp(key, COUNTRY_TN, 2) == 0 || strncmp(key, COUNTRY_PY, 2) == 0 || strncmp(key, COUNTRY_PA, 2) == 0 || strncmp(key, COUNTRY_MZ, 2) == 0 || strncmp(key, COUNTRY_MK, 2) == 0 || strncmp(key, COUNTRY_NZ, 2) == 0 || strncmp(key, COUNTRY_AF, 2) == 0 || strncmp(key, COUNTRY_CG, 2) == 0 || strncmp(key, COUNTRY_FJ, 2) == 0 || strncmp(key, COUNTRY_PF, 2) == 0) {
+            return 16;
+        }
+        if (strncmp(key, COUNTRY_CO, 2) == 0 || strncmp(key, COUNTRY_LT, 2) == 0 || strncmp(key, COUNTRY_IL, 2) == 0 || strncmp(key, COUNTRY_IR, 2) == 0 || strncmp(key, COUNTRY_GH, 2) == 0 || strncmp(key, COUNTRY_IE, 2) == 0 || strncmp(key, COUNTRY_BY, 2) == 0 || strncmp(key, COUNTRY_NA, 2) == 0 || strncmp(key, COUNTRY_GF, 2) == 0 || strncmp(key, COUNTRY_AM, 2) == 0 || strncmp(key, COUNTRY_GQ, 2) == 0) {
+            return 17;
+        }
+        if (strncmp(key, COUNTRY_PT, 2) == 0 || strncmp(key, COUNTRY_HU, 2) == 0 || strncmp(key, COUNTRY_MY, 2) == 0 || strncmp(key, COUNTRY_CR, 2) == 0 || strncmp(key, COUNTRY_CI, 2) == 0 || strncmp(key, COUNTRY_KR, 2) == 0 || strncmp(key, COUNTRY_BA, 2) == 0 || strncmp(key, COUNTRY_OM, 2) == 0 || strncmp(key, COUNTRY_UG, 2) == 0 || strncmp(key, COUNTRY_AZ, 2) == 0 || strncmp(key, COUNTRY_BH, 2) == 0 || strncmp(key, COUNTRY_MO, 2) == 0 || strncmp(key, COUNTRY_SL, 2) == 0) {
+            return 18;
+        }
+    }
+
     uint64_t x;
     uint32_t crc = UINT32_MAX;
 
