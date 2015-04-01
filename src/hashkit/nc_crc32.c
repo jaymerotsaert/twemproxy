@@ -266,58 +266,60 @@ hash_crc32(const char *key, size_t key_length)
 {
     if ((size_t) 2 == key_length) {
         if (strncmp(key, COUNTRY_US, 2) == 0 || strncmp(key, COUNTRY_BO, 2) == 0 || strncmp(key, COUNTRY_SK, 2) == 0 || strncmp(key, COUNTRY_SN, 2) == 0 || strncmp(key, COUNTRY_TW, 2) == 0 || strncmp(key, COUNTRY_MG, 2) == 0 || strncmp(key, COUNTRY_YE, 2) == 0 || strncmp(key, COUNTRY_XK, 2) == 0 || strncmp(key, COUNTRY_NE, 2) == 0 || strncmp(key, COUNTRY_TT, 2) == 0 || strncmp(key, COUNTRY_LR, 2) == 0) {
-            return 1;
+            return 0;
         }
         if (strncmp(key, COUNTRY_FR, 2) == 0 || strncmp(key, COUNTRY_CZ, 2) == 0 || strncmp(key, COUNTRY_DZ, 2) == 0 || strncmp(key, COUNTRY_GT, 2) == 0 || strncmp(key, COUNTRY_PH, 2) == 0 || strncmp(key, COUNTRY_CM, 2) == 0 || strncmp(key, COUNTRY_CU, 2) == 0 || strncmp(key, COUNTRY_KW, 2) == 0 || strncmp(key, COUNTRY_LB, 2) == 0 || strncmp(key, COUNTRY_JM, 2) == 0 || strncmp(key, COUNTRY_MQ, 2) == 0 || strncmp(key, COUNTRY_BI, 2) == 0 || strncmp(key, COUNTRY_ME, 2) == 0) {
-            return 2;
+            return 1;
         }
         if (strncmp(key, COUNTRY_BR, 2) == 0) {
-            return 3;
+            return 2;
         } 
         if (strncmp(key, COUNTRY_TR, 2) == 0) {
-            return 4;
+            return 3;
         } 
         if (strncmp(key, COUNTRY_RO, 2) == 0 || strncmp(key, COUNTRY_BE, 2) == 0 || strncmp(key, COUNTRY_ZA, 2) == 0 || strncmp(key, COUNTRY_NG, 2) == 0 || strncmp(key, COUNTRY_PK, 2) == 0 || strncmp(key, COUNTRY_KE, 2) == 0 || strncmp(key, COUNTRY_JO, 2) == 0 || strncmp(key, COUNTRY_BD, 2) == 0 || strncmp(key, COUNTRY_KZ, 2) == 0 || strncmp(key, COUNTRY_IS, 2) == 0 || strncmp(key, COUNTRY_GN, 2) == 0 || strncmp(key, COUNTRY_MW, 2) == 0 || strncmp(key, COUNTRY_MT, 2) == 0) {
-            return 5;
+            log_debug(LOG_NOTICE, "returning %d",
+            5);
+            return 4;
         }
         if (strncmp(key, COUNTRY_CL, 2) == 0 || strncmp(key, COUNTRY_GB, 2) == 0 || strncmp(key, COUNTRY_NL, 2) == 0 || strncmp(key, COUNTRY_NO, 2) == 0 || strncmp(key, COUNTRY_IQ, 2) == 0 || strncmp(key, COUNTRY_GR, 2) == 0 || strncmp(key, COUNTRY_HK, 2) == 0 || strncmp(key, COUNTRY_BF, 2) == 0 || strncmp(key, COUNTRY_TG, 2) == 0 || strncmp(key, COUNTRY_ET, 2) == 0 || strncmp(key, COUNTRY_RW, 2) == 0 || strncmp(key, COUNTRY_MU, 2) == 0 || strncmp(key, COUNTRY_KG, 2) == 0) {
-            return 6;
+            return 5;
         }
         if (strncmp(key, COUNTRY_IN, 2) == 0) {
-            return 7;
+            return 6;
         }
         if (strncmp(key, COUNTRY_CN, 2) == 0 || strncmp(key, COUNTRY_BG, 2) == 0 || strncmp(key, COUNTRY_RU, 2) == 0 || strncmp(key, COUNTRY_JP, 2) == 0 || strncmp(key, COUNTRY_PR, 2) == 0 || strncmp(key, COUNTRY_AE, 2) == 0 || strncmp(key, COUNTRY_QA, 2) == 0 || strncmp(key, COUNTRY_SD, 2) == 0 || strncmp(key, COUNTRY_GP, 2) == 0 || strncmp(key, COUNTRY_PG, 2) == 0 || strncmp(key, COUNTRY_SR, 2) == 0) {
-            return 8;
+            return 7;
         } 
         if (strncmp(key, COUNTRY_IT, 2) == 0) {
-            return 9;
+            return 8;
         }
         if (strncmp(key, COUNTRY_ID, 2) == 0 || strncmp(key, COUNTRY_PL, 2) == 0 || strncmp(key, COUNTRY_MA, 2) == 0 || strncmp(key, COUNTRY_TH, 2) == 0 || strncmp(key, COUNTRY_AT, 2) == 0 || strncmp(key, COUNTRY_AO, 2) == 0 || strncmp(key, COUNTRY_SY, 2) == 0 || strncmp(key, COUNTRY_HT, 2) == 0 || strncmp(key, COUNTRY_LY, 2) == 0 || strncmp(key, COUNTRY_GA, 2) == 0 || strncmp(key, COUNTRY_GE, 2) == 0 || strncmp(key, COUNTRY_BW, 2) == 0 || strncmp(key, COUNTRY_MN, 2) == 0) {
-            return 10;
+            return 9;
         } 
         if (strncmp(key, COUNTRY_VE, 2) == 0 || strncmp(key, COUNTRY_SA, 2) == 0 || strncmp(key, COUNTRY_EG, 2) == 0 || strncmp(key, COUNTRY_CH, 2) == 0 || strncmp(key, COUNTRY_AU, 2) == 0 || strncmp(key, COUNTRY_SV, 2) == 0 || strncmp(key, COUNTRY_SG, 2) == 0 || strncmp(key, COUNTRY_LK, 2) == 0 || strncmp(key, COUNTRY_ZW, 2) == 0 || strncmp(key, COUNTRY_CY, 2) == 0 || strncmp(key, COUNTRY_GM, 2) == 0 || strncmp(key, COUNTRY_MR, 2) == 0 || strncmp(key, COUNTRY_LA, 2) == 0) {
-            return 11;
+            return 10;
         }
         if (strncmp(key, COUNTRY_PE, 2) == 0 || strncmp(key, COUNTRY_DE, 2) == 0 || strncmp(key, COUNTRY_DO, 2) == 0 || strncmp(key, COUNTRY_SI, 2) == 0 || strncmp(key, COUNTRY_FI, 2) == 0 || strncmp(key, COUNTRY_NI, 2) == 0 || strncmp(key, COUNTRY_AL, 2) == 0 || strncmp(key, COUNTRY_CD, 2) == 0 || strncmp(key, COUNTRY_TZ, 2) == 0 || strncmp(key, COUNTRY_ZM, 2) == 0 || strncmp(key, COUNTRY_KH, 2) == 0 || strncmp(key, COUNTRY_RE, 2) == 0 || strncmp(key, COUNTRY_TD, 2) == 0) {
-            return 12;
+            return 11;
         } 
         if (strncmp(key, COUNTRY_AR, 2) == 0 || strncmp(key, COUNTRY_UY, 2) == 0 || strncmp(key, COUNTRY_UA, 2) == 0 || strncmp(key, COUNTRY_HR, 2) == 0 || strncmp(key, COUNTRY_EE, 2) == 0 || strncmp(key, COUNTRY_BJ, 2) == 0 || strncmp(key, COUNTRY_MM, 2) == 0 || strncmp(key, COUNTRY_LU, 2) == 0 || strncmp(key, COUNTRY_NP, 2) == 0 || strncmp(key, COUNTRY_DJ, 2) == 0) {
-            return 13;
+            return 12;
         }
         if (strncmp(key, COUNTRY_MX, 2) == 0) {
-            return 14;
+            return 13;
         } 
         if (strncmp(key, COUNTRY_VN, 2) == 0 || strncmp(key, COUNTRY_EC, 2) == 0 || strncmp(key, COUNTRY_SE, 2) == 0 || strncmp(key, COUNTRY_DK, 2) == 0 || strncmp(key, COUNTRY_RS, 2) == 0 || strncmp(key, COUNTRY_HN, 2) == 0 || strncmp(key, COUNTRY_LV, 2) == 0 || strncmp(key, COUNTRY_PS, 2) == 0 || strncmp(key, COUNTRY_ML, 2) == 0 || strncmp(key, COUNTRY_MD, 2) == 0 || strncmp(key, COUNTRY_CV, 2) == 0 || strncmp(key, COUNTRY_NC, 2) == 0 || strncmp(key, COUNTRY_UZ, 2) == 0 || strncmp(key, COUNTRY_AN, 2) == 0) {
-            return 15;
+            return 14;
         }
         if (strncmp(key, COUNTRY_ES, 2) == 0 || strncmp(key, COUNTRY_CA, 2) == 0 || strncmp(key, COUNTRY_TN, 2) == 0 || strncmp(key, COUNTRY_PY, 2) == 0 || strncmp(key, COUNTRY_PA, 2) == 0 || strncmp(key, COUNTRY_MZ, 2) == 0 || strncmp(key, COUNTRY_MK, 2) == 0 || strncmp(key, COUNTRY_NZ, 2) == 0 || strncmp(key, COUNTRY_AF, 2) == 0 || strncmp(key, COUNTRY_CG, 2) == 0 || strncmp(key, COUNTRY_FJ, 2) == 0 || strncmp(key, COUNTRY_PF, 2) == 0) {
-            return 16;
+            return 15;
         }
         if (strncmp(key, COUNTRY_CO, 2) == 0 || strncmp(key, COUNTRY_LT, 2) == 0 || strncmp(key, COUNTRY_IL, 2) == 0 || strncmp(key, COUNTRY_IR, 2) == 0 || strncmp(key, COUNTRY_GH, 2) == 0 || strncmp(key, COUNTRY_IE, 2) == 0 || strncmp(key, COUNTRY_BY, 2) == 0 || strncmp(key, COUNTRY_NA, 2) == 0 || strncmp(key, COUNTRY_GF, 2) == 0 || strncmp(key, COUNTRY_AM, 2) == 0 || strncmp(key, COUNTRY_GQ, 2) == 0) {
-            return 17;
+            return 16;
         }
         if (strncmp(key, COUNTRY_PT, 2) == 0 || strncmp(key, COUNTRY_HU, 2) == 0 || strncmp(key, COUNTRY_MY, 2) == 0 || strncmp(key, COUNTRY_CR, 2) == 0 || strncmp(key, COUNTRY_CI, 2) == 0 || strncmp(key, COUNTRY_KR, 2) == 0 || strncmp(key, COUNTRY_BA, 2) == 0 || strncmp(key, COUNTRY_OM, 2) == 0 || strncmp(key, COUNTRY_UG, 2) == 0 || strncmp(key, COUNTRY_AZ, 2) == 0 || strncmp(key, COUNTRY_BH, 2) == 0 || strncmp(key, COUNTRY_MO, 2) == 0 || strncmp(key, COUNTRY_SL, 2) == 0) {
-            return 18;
+            return 17;
         }
     }
 
